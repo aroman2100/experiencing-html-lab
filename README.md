@@ -3,8 +3,8 @@
 ## Problem Statement
 
 How do we go about writing text for the web? How is that different from the
-text that we write in a text file?  We're going to experience for ourselves how
-these things are different in this lab.
+text that we write in a text file like a Microsoft Word Document? We're going
+to experience for ourselves how these things are different in this lab.
 
 You don't need any prior knowledge of HTML for this lab. We're going to tell
 you what to type. Don't focus on specific commands or taking notes. Everything
@@ -22,7 +22,7 @@ _rendered text_ yet. We'll be defining them in this lab.
 
 ## Distinguish _markup_ from _content_
 
-### Create a Text File With A List
+#### Create a Text File With A List
 
 Launch the Learn IDE (use the Open IDE button) and create a new file called
 `my_list.txt`. The file extension suggests to humans and operating systems
@@ -46,7 +46,7 @@ English post-punk genre).
 The material we typed into the file is called the _content_.  It's the thing
 we're trying to communicate.
 
-### Content as a List in a Text File
+#### Content as a List in a Text File
 
 A problem with our _content_ is that it doesn't explicitly state anywhere that
 it's a list.  In the example, *you* see a list of songs. *we* see a list of
@@ -61,7 +61,7 @@ We will take the text content from our text file, paste it into a new HTML file
 and then we will add _markup_ so that a browser "sees" a list.  Let's write an
 HTML file!
 
-### Text Inside an HTML File
+#### Text Inside an HTML File
 
 We're going to create an HTML list together.
 
@@ -99,14 +99,14 @@ a little later in this README. Since the browser doesn't know we intend this to
 be a list **and** since browsers ignore when _content_ is split onto different
 lines, it displays all the _content_ on one line. Not what we wanted.
 
-### A Text Not-Really-A-List Into a Real-HTML-List
+#### A Text Not-Really-A-List Into a Real-HTML-List
 
 > **REMEMBER**: This lab will provide you what to type. Subsequent labs will
 > deeply examine details of HTML markup. However, our goal here is to show how
 > slight changes to markup can quickly alter the browser's display of content.
 > If you're fuzzy on a detail that's fine.
 
-#### Marking-Up List Items
+##### Marking-Up List Items
 
 OK, we've reached the critical moment. We're going to tell the browser that
 these bits of letters represent **list items**. To do so we "wrap" each line
@@ -148,7 +148,7 @@ Berners-Lee's reputation. And **you** just experienced Sir Tim's great insight.
 Let's work with additional HTML tags to see how we tweak our HTML a bit more.
 Let's tell the browser "Hey! These list items, they go together!"
 
-### Saying List Items Go Together
+#### Saying List Items Go Together
 
 Wrap the entire set of `<li>` items with an `<ol>` and `</ol>` like so:
 
@@ -194,7 +194,7 @@ separate lines? Cleaning up your code requires splitting lines, adding spaces,
 and adding tabs. Browser ignore those characters that _humans_ use to make
 their HTML reader-friendly.
 
-### Ordered to Unordered
+#### Ordered to Unordered
 
 Let's change our ordered list to be **unordered**. If `<ol>` means **ordered
 list**, you might guess that `<ul>` means **unordered list**. Make the change
@@ -211,7 +211,7 @@ Here we return to a "bulleted" unordered list.
 > when you make an error, but if you write _invalid_ HTML, they try to recover.
 > HTML validity will be discussed further soon!
 
-### Add a Description Paragraph
+#### Add a Description Paragraph
 
 Let's introduce our list by adding some background:
 
@@ -228,14 +228,14 @@ Let's introduce our list by adding some background:
 
 Take a look at your "rendered page" and verify the result is to your liking.
 
-### Put a Header on It
+#### Put a Header on It
 
 Lastly, let's put a "heading" on the top of our document. Add a `h1` element
 with an appropriate title inside.
 
 `<h1>My Music List</h1>`
 
-### Ta-Dah!
+#### All Done!
 
 Admire your finished work!
 
@@ -257,7 +257,7 @@ Here's the full example code:
 
 ## Conclusion
 
-### Cool-Down
+#### Cool-Down
 
 When you're done, click on the **terminal** of the Learn IDE. Your `httpserver`
 program should still be running there. To exit `httpserver` press `Control +
@@ -270,7 +270,7 @@ order to pass the check. Type `learn` and verify that your tests pass.
 Once you've passed the test, run the command `learn submit`. This will log your
 progress to our systems. You're ready to move on to the next lesson!
 
-### Looking Back
+#### Looking Back
 
 In this lab, you have, essentially, done the job of being an HTML author. You
 receive raw _content_, you _mark it up_ to create _source text_. You test,
